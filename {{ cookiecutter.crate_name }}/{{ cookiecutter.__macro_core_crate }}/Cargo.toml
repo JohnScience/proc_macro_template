@@ -1,0 +1,10 @@
+[package]
+name = "{{ cookiecutter.__macro_core_crate }}"
+version = "0.1.0"
+edition = "{{ cookiecutter._rust_edition }}"
+
+[dependencies]
+proc-macro2 = "{{ cookiecutter._versions.proc_macro2 }}"
+quote = "{{ cookiecutter._versions.quote }}"
+colored-diff = "{{ cookiecutter._versions.colored_diff }}"
+# syn = "{{ cookiecutter._versions.syn }}"

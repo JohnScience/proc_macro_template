@@ -1,0 +1,37 @@
+{
+    "crate_name": "my_macro",
+    "crate_name_sep": ["_", "-"],
+    "macro_idents": {
+        "proc_macro": [
+            "my_fnlike_macro"
+        ],
+        "proc_macro_derive": [
+            {
+                "derive_name": "MyDeriveWoAttrs",
+                "fn_name": "my_derive_macro_wo_attrs",
+                "attributes": []
+            },
+            {
+                "derive_name": "MyDeriveWAttrs",
+                "fn_name": "my_derive_macro_w_attrs",
+                "attributes": ["helper1", "helper2"]
+            }
+        ],
+        "proc_macro_attribute": [
+            "my_attr_macro"
+        ]
+    },
+    "use_shorthands_for_proc_macro_crates": true,
+
+    "__macro_core_crate": "{{ cookiecutter.crate_name }}{{ cookiecutter.crate_name_sep }}core",
+    "__macro_core_crate_ident": "{{ cookiecutter.crate_name|replace(\"-\", \"_\") }}_core",
+    "__pm_crate_ident": "{{ \"pm\" if cookiecutter.use_shorthands_for_proc_macro_crates else \"proc_macro\" }}",
+    "__pm2_crate_ident": "{{ \"pm2\" if cookiecutter.use_shorthands_for_proc_macro_crates else \"proc_macro2\" }}",
+    "_versions": {
+        "proc_macro2": "1.0.60",
+        "quote": "1.0.28",
+        "syn": "2.0.18",
+        "colored_diff": "0.2.3"
+    },
+    "_rust_edition": "2021"
+}

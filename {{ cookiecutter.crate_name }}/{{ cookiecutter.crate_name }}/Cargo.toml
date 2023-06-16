@@ -1,0 +1,11 @@
+[package]
+name = "{{ cookiecutter.crate_name }}"
+version = "0.1.0"
+edition = "{{ cookiecutter._rust_edition }}"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+{{ cookiecutter.__macro_core_crate }} = { path = "../{{  cookiecutter.__macro_core_crate }}" }
+proc-macro2 = "{{ cookiecutter._versions.proc_macro2 }}"

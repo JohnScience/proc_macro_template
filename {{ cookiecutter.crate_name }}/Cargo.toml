@@ -1,0 +1,8 @@
+# this template was largely inspired by "Nine Rules for Creating Procedural Macros in Rust" by Carl M. Kadie
+# https://towardsdatascience.com/nine-rules-for-creating-procedural-macros-in-rust-595aa476a7ff
+
+[workspace]
+members = [
+    "{{ cookiecutter.crate_name }}",
+    "{{ cookiecutter.__macro_core_crate }}",
+]
