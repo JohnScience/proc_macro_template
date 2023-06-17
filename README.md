@@ -33,3 +33,5 @@ python -m cookiecutter gh:JohnScience/proc_macro_template --no-input
 The template was inspired by Medium article ["Nine Rules for Creating Procedural Macros in Rust"](https://towardsdatascience.com/nine-rules-for-creating-procedural-macros-in-rust-595aa476a7ff), authored by Carl Kadie.
 
 It consists of the `<crate_name>_core` crate that implements the functionality and `<crate_name>` crate that exposes the usable API.
+
+Example of a project generated using this cookiecutter is available [here](https://github.com/JohnScience/proc_macro_template_example).
