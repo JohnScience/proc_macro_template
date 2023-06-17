@@ -35,6 +35,8 @@ The template was inspired by by Carl M. Kadie's article ["Nine Rules for Creatin
 
 The template consists of the `<crate_name>_core` crate that implements the functionality and `<crate_name>` crate that exposes the usable procedural macros.
 
+## Generated project example
+
 Example of a project generated using this cookiecutter is available [here](https://github.com/JohnScience/proc_macro_template_example).
 
 ## Notes
