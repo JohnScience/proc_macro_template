@@ -1,5 +1,7 @@
 {
     "crate_name": "my_macro",
+    "crate_description": "The name of this crate is self-explainatory.",
+    "license": "MIT",
     "crate_name_sep": ["_", "-"],
     "macro_idents": {
         "proc_macro": [

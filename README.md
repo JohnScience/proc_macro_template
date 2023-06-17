@@ -1,4 +1,5 @@
 # proc_macro_template
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [Cookiecutter](https://github.com/cookiecutter/cookiecutter) template for creating [procedural macros](https://doc.rust-lang.org/reference/procedural-macros.html) in [Rust](https://www.rust-lang.org/) programming language.
@@ -30,8 +31,12 @@ python -m cookiecutter gh:JohnScience/proc_macro_template --no-input
 
 ## About the template
 
-The template was inspired by Medium article ["Nine Rules for Creating Procedural Macros in Rust"](https://towardsdatascience.com/nine-rules-for-creating-procedural-macros-in-rust-595aa476a7ff), authored by Carl Kadie.
+The template was inspired by by Carl M. Kadie's article ["Nine Rules for Creating Procedural Macros in Rust"](https://towardsdatascience.com/nine-rules-for-creating-procedural-macros-in-rust-595aa476a7ff).
 
-It consists of the `<crate_name>_core` crate that implements the functionality and `<crate_name>` crate that exposes the usable API.
+The template consists of the `<crate_name>_core` crate that implements the functionality and `<crate_name>` crate that exposes the usable procedural macros.
 
 Example of a project generated using this cookiecutter is available [here](https://github.com/JohnScience/proc_macro_template_example).
+
+## Notes
+
+This template was created before the author recalled that there's also [`cargo-generate`](https://crates.io/crates/cargo-generate), which would allow Rust developers to use only the already available tooling.
