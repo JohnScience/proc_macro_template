@@ -42,5 +42,3 @@ Example of a project generated using this cookiecutter is available [here](https
 ## Notes
 
 This template was created before the author recalled that there's also [`cargo-generate`](https://crates.io/crates/cargo-generate), which would allow Rust developers to use only the already available tooling.
-
-<meta name="google-site-verification" content="NwLM-d2ELIlfau7_GG3hkmbr5aqlQthFVlBwCtI0YF0" />
