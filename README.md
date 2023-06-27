@@ -39,6 +39,10 @@ The template consists of the `<crate_name>_core` crate that implements the funct
 
 Example of a project generated using this cookiecutter is available [here](https://github.com/JohnScience/proc_macro_template_example).
 
+## On (in)stability of `cookiecutter.json`
+
+As mentioned in [issue #1 "Making input easier"](https://github.com/JohnScience/proc_macro_template/issues/1), the author believes the input could be made easier. Consequently, `cookiecutter.json` can change.
+
 ## Notes
 
 This template was created before the author recalled that there's also [`cargo-generate`](https://crates.io/crates/cargo-generate), which would allow Rust developers to use only the already available tooling.
